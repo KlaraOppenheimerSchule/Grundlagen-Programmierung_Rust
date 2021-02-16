@@ -13,7 +13,7 @@ impl MyStruct {
 ```
 
 Wenn sichtbarkeit benötigt wird muss man die Struktur in einem "Modul" schreiben:
-```
+```Rust
 mod my_module {
     struct MyStruct {
 
