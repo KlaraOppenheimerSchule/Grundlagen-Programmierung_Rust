@@ -40,4 +40,12 @@ impl MyStruct {
     }
 }
 ```
+Dieser "Contructor" wird aber nur benötigt wenn 1 oder mehrere Felder "private" sind, falls alle felder "public" sind kann man die Struktur normal initialisieren
+```Rust
+let my_struct = MyStruct {
+    my_field: 5
+}
+```
+
+
 Jetzt kann man mit "gettern" und "settern" private Felder verändern und lesen.
