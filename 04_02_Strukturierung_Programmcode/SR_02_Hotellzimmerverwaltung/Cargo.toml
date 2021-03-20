@@ -1,0 +1,13 @@
+[package]
+name = "hotellzimmer-uebung"
+version = "1.0.0"
+authors = ["Sebastian Rueth <sebastian.rueth@protonmail.com>"]
+edition = "2018"
+
+
+[dependencies]
+serde_json = "^1.0"
+serde = { version = "^1.0", features = ["derive"] }
+colored = "^2.0.0"
+clap = { version = "3.0.0-beta.2", features = ["yaml"] }
+sha2 = "0.9.3"
