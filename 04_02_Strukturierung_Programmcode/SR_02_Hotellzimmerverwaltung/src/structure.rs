@@ -196,6 +196,10 @@ impl Hotel {
         let _ = self.save_to_file();
     }
 
+    fn show_free_rooms(&self) {
+
+    }
+
     #[allow(dead_code)] // Obwohl Funktion in der impl hier benutzt wird, beschwert sich der compiler
     fn add_etage_menu(&mut self) {
         let mut buffer = String::new();
@@ -258,8 +262,7 @@ impl Hotel {
 
             println!("{}", "Hotelmanager".underline().bold().blue());
             println!("{}", "  1. Zimmer reservieren".green());
-            // println!("{}", "  2. Etagen bearbeiten".green());
-            println!("{}", "  2. Nichts :)".green());
+            println!("{}", "  2. Freie zimmer anzeigen".green());
             println!("{}", "  3. Exit".green());
             print!("{}", ">> ".bold());
             let _ = stdout().flush();
@@ -270,7 +273,7 @@ impl Hotel {
                     self.reservieren_menu();
                 }
                 "2" => {
-                    // self.etagen_menu();
+                    self.show_free_rooms();
                 }
                 "3" => {
                     Self::clear_terminal();
