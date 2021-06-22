@@ -1,0 +1,10 @@
+name: Hotelmanager
+version: "1.0.0"
+author: Sebbl
+about: Übungsaufgabe Hotel
+args:
+  - FILE:
+      about: Path of the data .json file
+      required: false
+      index: 1
+      takes_value: true
