@@ -70,13 +70,24 @@ pub struct Amphibienfahrzeug {
     anzahl_sitzplaetze: i32,
 }
 
+impl Amphibienfahrzeug {
+    pub fn new() -> Self {
+        Self {
+            land_hoechstgeschwindigkeit: 60,
+            wasser_hoechstgeschwindigkeit: 180,
+            anzahl_sitzplaetze: 4
+        }
+    }
+}
+
+
 impl Fahrzeug for Amphibienfahrzeug {
     fn fortbewegen(&mut self) {
         println!("Das Amphibienfahrzeug fährt auf dem Wasser und auf dem Land");
     }
 
     fn anzahl_sitzplaetze(&self) -> i32 {
-        todo!()
+        self.anzahl_sitzplaetze
     }
 
     fn hoechstgeschwindigkeit(&self) -> i32 {
